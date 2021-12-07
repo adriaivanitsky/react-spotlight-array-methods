@@ -2,7 +2,8 @@ import { filterAu, filterOceania, getCountryCodes, getCountryNames, getSneaks } 
 import { brands, countries } from '../data';
 
 test('getCountryNames should return the country names', () => {
-  expect(getCountryNames(countries)).toStrictEqual([
+  const data = getCountryNames(countries);
+  expect(data).toStrictEqual([
     'Ecuador',
     'Lesotho',
     'Yemen',
